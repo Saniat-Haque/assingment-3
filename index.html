@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+      
+        @layer utilities {
+          @keyframes fade-in-up {
+            from {
+              opacity: 0;
+              transform: translateY(20px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+          .animate-fade-in-up {
+            animation: fade-in-up 0.8s ease-out forwards;
+          }
+        }
+      </style>
+   <div class=" flex justify-between p-[32px] xl:border-none xl:px-[90px] iteam-center border border-[#638B3F] ">
+
+            <div class="">
+                <img src="/c2-assets/logo-header.png" alt="">
+            </div>
+
+
+
+            <div class=" flex gap-5  ">
+                <p>Product</p>
+                <p>Services</p>
+                <p>Contact us</p>
+            </div>
+
+           <div class=" flex gap-4 iteam-center sm:hidden lg:hidden ">
+            <div class="">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class=" sm:hidden xl:block ">
+                <button class=" px-[30px] py-[10px] border border-green-500 rounded-[7px] " >Login</button>
+                <button class=" px-[30px] py-[10px] text-white border-green-500 bg-green-500 rounded-[7px] " >Register</button>
+            </div>
+
+           </div>
+
+
+
+            <div class=" text-[30px] text-[#638B3F] xl:hidden  ">
+
+                <i  class="fa-solid fa-bars"></i>
+            </div>
+
+   </div>
+
+   <div class=" text-center mt-[40px] xl:w-[827px] xl:m-auto ">
+    <h1 class="mb-[30px] font-semibold text-[32px] text-center text-gray-900 
+    opacity-0 translate-y-4 animate-fade-in-up">
+Freshness <span class="text-green-700">You Can <br> Count</span> On, Prices <br class=" xl:hidden " > You’ll Love!
+</h1>
+<h1></h1>
+        <p class="font-light text-[#111111] text-[16px] w-[350px] text-center m-auto xl:w-[600px] " >Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+   </div>
+
+   <div class="bg-[linear-gradient(to_top,#868086,transparent)]">
+    <img class="p-[15px]" src="/c2-assets/hero-vegetables.png" alt="">
+</div>
+<div class=" text-green-600 font-semibold text-[24px] ml-[15px] mt-[40px] mb-[20px] ">Services</div>
+
+<div class=" flex flex-wrap justify-center gap-[20px] mb-[40px] ">
+    <div class="w-[356px] h-[308px] rounded-[12px] bg-[#868086] p-[50px] flex flex-col items-center justify-center text-center">
+        <img class="bg-white rounded-full p-3" src="/c2-assets/service.png" alt="">
+        <h1 class="text-white font-semibold text-[20px] mt-4">24/7 Services</h1>
+        <p class="text-white text-[16px] mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        </p>
+    </div>
+    <div class="w-[356px] h-[308px] rounded-[12px] bg-[#868086] p-[50px] flex flex-col items-center justify-center text-center">
+        <img class="bg-white rounded-full p-3" src="/c2-assets/delivery.png" alt="">
+        <h1 class="text-white font-semibold text-[20px] mt-4">Fast Delivery</h1>
+        <p class="text-white text-[16px] mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        </p>
+    </div>
+    <div class="w-[356px] h-[308px] rounded-[12px] bg-[#868086] p-[50px] flex flex-col items-center justify-center text-center">
+        <img class="bg-white rounded-full p-3" src="/c2-assets/healthy.png" alt="">
+        <h1 class="text-white font-semibold text-[20px] mt-4">Healthy Products </h1>
+        <p class="text-white text-[16px] mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        </p>
+    </div>
+    
+</div>
+
+<div class=" bg-[#d4cfd4] pt-[15px] ">
+    <h2 class=" text-green-600 text-[32px] font-semibold ml-[20px] mt-[40px] mb-[30px] " >Populr Products</h2>
+    <div class="relative w-[360px] h-[340px] rounded-[12px] p-6 text-black m-auto shadow-lg"
+     style="background: linear-gradient(to bottom right, #4caf50, #ffffff);">
+
+    
+    <p class="font-bold text-2xl text-white ">30% off</p>
+
+    
+    <p class="mt-2 text-gray-800">Discover a world of treats, toys, and <br> essentials handpicked for</p>
+
+    
+    <button class="mt-4 px-[20px] py-[10px] bg-white text-black font-medium rounded-[6px] shadow-md">
+        Buy Now
+    </button>
+
+    
+    <img class="absolute bottom-[0px] right-[0px] w-[180px] h-auto" src="/c2-assets/vegetable-offer.png" alt="">
+    </div>
+
+    
+    <div class=" flex justify-center flex-wrap gap-3 mt-[20px] pb-[30px] ">
+
+
+
+        <div class="w-[171px] h-[73px] bg-white rounded-[6px] shadow-md   flex items-center p-2 gap-2">
+    
+        
+            <div class="w-[50px] h-[50px] bg-gray-100 flex items-center justify-center rounded-[6px]">
+                <img class="w-[40px] h-auto" src="/c2-assets/vegetable-offer.png" alt="Tomato">
+            </div>
+        
+            
+            <div class="flex flex-col justify-between h-full">
+                
+                <div class="flex items-center text-yellow-500 text-xs">
+                    <i class="fa-solid fa-star"></i>
+                    <p class="ml-1 text-gray-700 font-medium">4.5</p>
+                </div>
+                <p class="font-medium text-[10px] text-gray-900">Tomato 500 g</p>
+    
+                <p class="text-gray-700 text-[10px] font-semibold">$39.99</p>
+            
+        
+             </div>
+        </div>
+
+        <div class="w-[171px] h-[73px] bg-white rounded-[6px] shadow-md   flex items-center p-2 gap-2">
+    
+        
+            <div class="w-[50px] h-[50px] bg-gray-100 flex items-center justify-center rounded-[6px]">
+                <img class="w-[40px] h-auto" src="/c2-assets/vegetable-offer.png" alt="Tomato">
+            </div>
+        
+            
+            <div class="flex flex-col justify-between h-full">
+                
+                <div class="flex items-center text-yellow-500 text-xs">
+                    <i class="fa-solid fa-star"></i>
+                    <p class="ml-1 text-gray-700 font-medium">4.5</p>
+                </div>
+                <p class="font-medium text-[10px] text-gray-900">Tomato 500 g</p>
+    
+                <p class="text-gray-700 text-[10px] font-semibold">$39.99</p>
+            
+        
+             </div>
+        </div>
+
+        <div class="w-[171px] h-[73px] bg-white rounded-[6px] shadow-md   flex items-center p-2 gap-2">
+    
+        
+            <div class="w-[50px] h-[50px] bg-gray-100 flex items-center justify-center rounded-[6px]">
+                <img class="w-[40px] h-auto" src="/c2-assets/vegetable-offer.png" alt="Tomato">
+            </div>
+        
+            
+            <div class="flex flex-col justify-between h-full">
+                
+                <div class="flex items-center text-yellow-500 text-xs">
+                    <i class="fa-solid fa-star"></i>
+                    <p class="ml-1 text-gray-700 font-medium">4.5</p>
+                </div>
+                <p class="font-medium text-[10px] text-gray-900">Tomato 500 g</p>
+    
+                <p class="text-gray-700 text-[10px] font-semibold">$39.99</p>
+            
+        
+             </div>
+        </div>
+
+        <div class="w-[171px] h-[73px] bg-white rounded-[6px] shadow-md   flex items-center p-2 gap-2">
+    
+        
+            <div class="w-[50px] h-[50px] bg-gray-100 flex items-center justify-center rounded-[6px]">
+                <img class="w-[40px] h-auto" src="/c2-assets/vegetable-offer.png" alt="Tomato">
+            </div>
+        
+            
+            <div class="flex flex-col justify-between h-full">
+                
+                <div class="flex items-center text-yellow-500 text-xs">
+                    <i class="fa-solid fa-star"></i>
+                    <p class="ml-1 text-gray-700 font-medium">4.5</p>
+                </div>
+                <p class="font-medium text-[10px] text-gray-900">Tomato 500 g</p>
+    
+                <p class="text-gray-700 text-[10px] font-semibold">$39.99</p>
+            
+        
+             </div>
+        </div>
+
+        <div class="w-[171px] h-[73px] bg-white rounded-[6px] shadow-md   flex items-center p-2 gap-2">
+    
+        
+            <div class="w-[50px] h-[50px] bg-gray-100 flex items-center justify-center rounded-[6px]">
+                <img class="w-[40px] h-auto" src="/c2-assets/vegetable-offer.png" alt="Tomato">
+            </div>
+        
+            
+            <div class="flex flex-col justify-between h-full">
+                
+                <div class="flex items-center text-yellow-500 text-xs">
+                    <i class="fa-solid fa-star"></i>
+                    <p class="ml-1 text-gray-700 font-medium">4.5</p>
+                </div>
+                <p class="font-medium text-[10px] text-gray-900">Tomato 500 g</p>
+    
+                <p class="text-gray-700 text-[10px] font-semibold">$39.99</p>
+            
+        
+             </div>
+        </div>
+
+        <div class="w-[171px] h-[73px] bg-white rounded-[6px] shadow-md   flex items-center p-2 gap-2">
+    
+        
+            <div class="w-[50px] h-[50px] bg-gray-100 flex items-center justify-center rounded-[6px]">
+                <img class="w-[40px] h-auto" src="/c2-assets/vegetable-offer.png" alt="Tomato">
+            </div>
+        
+            
+            <div class="flex flex-col justify-between h-full">
+                
+                <div class="flex items-center text-yellow-500 text-xs">
+                    <i class="fa-solid fa-star"></i>
+                    <p class="ml-1 text-gray-700 font-medium">4.5</p>
+                </div>
+                <p class="font-medium text-[10px] text-gray-900">Tomato 500 g</p>
+    
+                <p class="text-gray-700 text-[10px] font-semibold">$39.99</p>
+            
+        
+             </div>
+        </div>
+
+        <div class="w-[171px] h-[73px] bg-white rounded-[6px] shadow-md   flex items-center p-2 gap-2">
+    
+        
+            <div class="w-[50px] h-[50px] bg-gray-100 flex items-center justify-center rounded-[6px]">
+                <img class="w-[40px] h-auto" src="/c2-assets/vegetable-offer.png" alt="Tomato">
+            </div>
+        
+            
+            <div class="flex flex-col justify-between h-full">
+                
+                <div class="flex items-center text-yellow-500 text-xs">
+                    <i class="fa-solid fa-star"></i>
+                    <p class="ml-1 text-gray-700 font-medium">4.5</p>
+                </div>
+                <p class="font-medium text-[10px] text-gray-900">Tomato 500 g</p>
+    
+                <p class="text-gray-700 text-[10px] font-semibold">$39.99</p>
+            
+        
+             </div>
+        </div>
+
+        <div class="w-[171px] h-[73px] bg-white rounded-[6px] shadow-md   flex items-center p-2 gap-2">
+    
+        
+            <div class="w-[50px] h-[50px] bg-gray-100 flex items-center justify-center rounded-[6px]">
+                <img class="w-[40px] h-auto" src="/c2-assets/vegetable-offer.png" alt="Tomato">
+            </div>
+        
+            
+            <div class="flex flex-col justify-between h-full">
+                
+                <div class="flex items-center text-yellow-500 text-xs">
+                    <i class="fa-solid fa-star"></i>
+                    <p class="ml-1 text-gray-700 font-medium">4.5</p>
+                </div>
+                <p class="font-medium text-[10px] text-gray-900">Tomato 500 g</p>
+    
+                <p class="text-gray-700 text-[10px] font-semibold">$39.99</p>
+            
+        
+             </div>
+        </div>
+
+    </div>
+
+       
+
+   
+
+
+    
+</div>
+
+<div class="w-full bg-[#F5F5F5] py-[50px]">
+    <h2 class="text-center text-green-700 text-[32px] font-semibold mb-[30px]">Why Choose Us?</h2>
+    
+    <div class="flex flex-wrap justify-center gap-[20px]">
+        
+        <div class="w-[280px] h-[250px] bg-white rounded-[12px] shadow-lg flex flex-col items-center p-6 text-center">
+            <img class="w-[80px] h-[80px]" src="/c2-assets/india-gate-mock-up.png" alt="High Quality">
+            <h3 class="text-green-700 font-semibold text-[18px] mt-4">High-Quality Products</h3>
+            <p class="text-gray-700 text-[14px] mt-2">
+                We ensure the best quality with farm-fresh items delivered to your doorstep.
+            </p>
+        </div>
+
+        
+        <div class="w-[280px] h-[250px] bg-white rounded-[12px] shadow-lg flex flex-col items-center p-6 text-center">
+            <img class="w-[80px] h-[80px]" src="/c2-assets/india-gate-logo.png" alt="Affordable Prices">
+            <h3 class="text-green-700 font-semibold text-[18px] mt-4">Affordable Prices</h3>
+            <p class="text-gray-700 text-[14px] mt-2">
+                Get the best deals on everyday essentials without compromising on quality.
+            </p>
+        </div>
+
+        
+        <div class="w-[280px] h-[250px] bg-white rounded-[12px] shadow-lg flex flex-col items-center p-6 text-center">
+            <img class="w-[80px] h-[80px]" src="/c2-assets/delivery.png" alt="Reliable Delivery">
+            <h3 class="text-green-700 font-semibold text-[18px] mt-4">Reliable Delivery</h3>
+            <p class="text-gray-700 text-[14px] mt-2">
+                Fast and efficient delivery ensures that your groceries arrive fresh and on time.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class=" flex flex-col gap-4 ">
+
+    <h1 class="ml-[30px] mt-[40px] mb-[40px] font-semibold text-[32px] " >Arrival and Offers </h1>
+
+    <div class="relative w-[360px] h-[190px] bg-[#28521E] m-auto rounded-[12px] flex  gap-[00px] items-center px-6">
+    
+        
+        <div class="flex flex-col gap-2 text-white">
+           
+            <img class="w-[120px]" src="/c2-assets/dawat-logo.png" alt="Daawat Logo">
+            
+            
+            <button class="bg-[#A3C99E] px-[18px] py-[8px] text-[#ffffff] font-medium text-sm  rounded-[6px]">
+                Cook Exotic Dishes
+            </button>
+    
+            
+            <p class="text-lg font-light">
+                UP to <span class="font-bold text-xl">20% OFF</span>
+            </p>
+        </div>
+    
+        
+        <img class=" pl-[0px] w-[147px] right-[] h-[172px]" src="/c2-assets/dawat-mock-up.png" alt="Daawat Product">
+    
+    </div>
+
+
+    <div class="relative w-[360px] h-[190px] bg-[#102861] m-auto rounded-[12px] flex mb-[40px] items-center px-6">
+    
+        
+        <div class="flex flex-col gap-4 text-white">
+           
+            <img class="w-[64] h-[62px]" src="/c2-assets/india-gate-logo.png" alt="Daawat Logo">
+            
+            
+            <button class="bg-[#A3C99E] text-[#ffffff] font-medium text-sm px-4 py-2 rounded-[6px]">
+                Cook Exotic Dishes
+            </button>
+    
+            
+            <p class="text-lg font-light">
+                UP to <span class="font-bold text-xl">20% OFF</span>
+            </p>
+        </div>
+    
+        
+        <img class=" pl-[40px] w-[120px] h-[162px]" src="/c2-assets/india-gate-mock-up.png" alt="Daawat Product">
+    
+    </div>
+    
+
+
+
+
+
+</div>
+
+<div class="relative w-[360px] h-[400px] bg-white rounded-[16px] flex flex-col m-auto justify-center mb-[-190px] z-50 items-center">
+    
+    <div class="flex flex-col items-center justify-center h-[400px] w-full bg-green-700 rounded-[12px] p-6">
+        
+        <img class="w-[232px] h-[182px]" src="/c2-assets/vegetable-busket.png" alt="Vegetable Basket">
+        
+        <p class="font-bold text-[22px] my-[15px] text-white">Get Grocery Everyday</p>
+        
+        <p class="w-[333px] text-center text-white text-sm">Exclusive training tips, tricks, product deals, and more.</p>
+        
+        <input class="w-[312px] bg-white rounded-[5px] h-[42px] outline-none px-4 mt-4" 
+               type="text" placeholder="Enter email">
+        
+        <button class="px-[24px] bg-green-600 text-white font-semibold py-2 rounded-[6px] mt-4">
+            Subscribe
+        </button>
+    
+    </div>
+
+</div>
+
+<div class="w-full h-[660px] bg-green-900 text-white flex z-10 items-end relative">
+
+    
+    <div class="w-[354px] h-[329px] p-[20px]  left-[0px] absolute left-0 bottom-15  ">
+        
+       
+        <div class="mb-7">
+            <img class="" src="./c2-assets/logo-footer.png" alt="Footer Logo">
+            <p class="mt-2 text-[16px] font-regular text-gray-200">
+                Discover a world of treats, toys, and essentials handpicked for your furry friends
+            </p>
+        </div>
+
+       
+        <div class="mb-7">
+            <ul class="space-y-2">
+                <li class="hover:underline cursor-pointer">Products</li>
+                <li class="hover:underline cursor-pointer">Services</li>
+                <li class="hover:underline cursor-pointer">Contact Us</li>
+            </ul>
+        </div>
+        
+       
+        <div class="flex flex-col mb-[15px] space-x-4">
+            <p pb-[15px]  >Follow us</p>
+            <div class=" flex mt-[15px]  gap-5 ">
+            <i class="fa-brands fa-facebook text-lg"></i>
+            <i class="fa-brands fa-instagram text-lg"></i>
+            <i class="fa-brands fa-linkedin text-lg"></i>
+            <i class="fa-brands fa-youtube text-lg"></i>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
